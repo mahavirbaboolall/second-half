@@ -1,0 +1,8 @@
+{
+  "name": "Second half",
+  "collector": "letters@example.com",
+  "pair": [
+    { "id": "one", "name": "First address", "email": "one@example.com" },
+    { "id": "two", "name": "Second address", "email": "two@example.com" }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+ {
+  "shape": "Long Document",
+  "theme": "newsprint",
+  "axes": "light/slab-serif/warm",
+  "hero": "Counter",
+  "nav": "masthead",
+  "footer": "colophon",
+  "imagery": "photographs",
+  "photos": [
+   "Spiralbinderücken -- 2022 -- 9722.jpg"
+  ],
+  "entry": "Second half, a quarterly letter whose own news sits under the double rule",
+  "fingerprint": "long-document/counter/masthead/colophon/fold",
+  "sections": [
+   "Counter hero",
+   "Rows: the pair",
+   "Letter with one photograph",
+   "Rows: the handshake",
+   "Colophon"
+  ],
+  "signature": "the double rule, your own quarter under it",
+  "waived": [],
+  "prompt": "quarterly letter between two emails, own updates on the second half",
+  "date": "2026-11-12",
+  "mode": "build"
+ }
+]

@@ -1,0 +1,281 @@
+/* Hallmark · shape: Long Document · genre: editorial · theme: Newsprint (deal 2/3, seed quarterly-letter-between-two-8524·1ae73e7d·2026-11-09·r0) · job: subscribe · draw: 29aa45
+ * hero: Counter · nav: masthead · footer: colophon · imagery: photographs · signature: the double rule, with your own quarter under it
+ * axes: light/slab-serif/warm · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: H, one double rule marks the fold so the second half reads as a close */
+@import url("./tokens.css");
+@import url("./base.css");
+
+.mast {
+  min-height: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
+}
+
+.wordmark {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-size: var(--text-title);
+  letter-spacing: var(--tracking-display);
+  line-height: 1.05;
+  text-decoration: none;
+}
+
+.mast nav {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.mast nav a {
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-underline-offset: 0.16em;
+}
+
+.mast nav a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.hero {
+  min-height: calc(100dvh - var(--space-2xl));
+  display: flex;
+  align-items: center;
+  padding-block: var(--space-lg);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-3xl);
+  align-items: center;
+  width: 100%;
+}
+
+.hero h1 {
+  max-width: 14ch;
+}
+
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-lg);
+  min-height: calc(32rem + var(--space-xs));
+  border-bottom: var(--rule-hair) solid var(--color-rule-2);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  min-height: 48px;
+  max-height: 52px;
+  padding-inline: var(--space-lg);
+  padding-block: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-size: var(--text-md);
+  line-height: 1;
+  letter-spacing: 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.btn:active {
+  background: var(--color-ink-2);
+  color: var(--color-paper);
+}
+
+.half {
+  padding-block: var(--space-lg);
+  border-top: var(--rule-hair) solid var(--color-rule-2);
+}
+
+.half-name {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-size: var(--text-display-s);
+  letter-spacing: var(--tracking-display);
+  line-height: 1.05;
+}
+
+.half p:not(.half-name) {
+  margin-top: var(--space-sm);
+  max-width: 36ch;
+}
+
+.who {
+  padding-top: var(--section-gap-l);
+}
+
+.who .lead,
+.issue .lead,
+.edition .lead {
+  margin-top: var(--space-md);
+}
+
+.rows {
+  margin-top: var(--space-2xl);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--space-lg);
+  align-items: baseline;
+  padding-block: var(--space-xl);
+  border-top: var(--rule-hair) solid var(--color-rule);
+}
+
+.row:last-child {
+  border-bottom: var(--rule-hair) solid var(--color-rule);
+}
+
+.issue {
+  padding-top: var(--section-gap);
+}
+
+.opening::first-letter {
+  float: left;
+  padding-right: var(--space-2xs);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-size: 3.4em;
+  line-height: 0.8;
+}
+
+.cols {
+  margin-top: var(--space-xl);
+  columns: 3;
+  column-gap: var(--space-xl);
+  column-rule: var(--rule-hair) solid var(--color-rule);
+  text-align: justify;
+  hyphens: auto;
+}
+
+.cols p {
+  max-width: none;
+  margin-bottom: var(--space-md);
+}
+
+.frame {
+  aspect-ratio: 21 / 9;
+  max-height: 420px;
+  margin-top: var(--space-xl);
+}
+
+.shot {
+  margin: 0;
+}
+
+figcaption,
+.byline {
+  margin-top: var(--space-xs);
+  color: var(--color-muted);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.rule-double {
+  box-sizing: content-box;
+  height: 2px;
+  margin-block: var(--space-2xl);
+  border: 0;
+  border-block: var(--rule-hair) solid var(--color-rule-2);
+}
+
+.issue h3 {
+  max-width: 16ch;
+  font-size: var(--text-display-s);
+}
+
+.own {
+  margin-top: var(--space-md);
+  max-width: 62ch;
+}
+
+.fold {
+  padding-top: var(--section-gap-s);
+  padding-bottom: var(--section-gap);
+}
+
+.fold-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.fold-grid .rows {
+  margin-top: 0;
+}
+
+.edition {
+  padding-block: var(--section-gap-s);
+}
+
+.edition-open {
+  margin-bottom: var(--space-2xl);
+}
+
+.letter-half + .rule-double,
+.rule-double + .letter-half {
+  margin-top: var(--space-2xl);
+}
+
+.colophon {
+  padding-block: var(--space-xl);
+  border-top: var(--rule-hair) solid var(--color-rule);
+}
+
+.colophon p {
+  max-width: 68ch;
+}
+
+.colophon a {
+  color: var(--color-accent);
+}
+
+.colophon a:hover {
+  text-decoration-thickness: 2px;
+}
+
+@media (max-width: 60rem) {
+  .hero {
+    min-height: 0;
+    display: block;
+  }
+
+  .hero-grid,
+  .row,
+  .fold-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-visual {
+    min-height: 0;
+  }
+
+  .cols {
+    columns: 1;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "second-half",
+  "private": true,
+  "type": "module",
+  "description": "A quarterly letter for two addresses. Your own news sits on the second half.",
+  "scripts": {
+    "test": "node --test",
+    "ingest": "node src/cli.js ingest",
+    "issue": "node src/cli.js issue",
+    "serve": "node src/cli.js serve"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

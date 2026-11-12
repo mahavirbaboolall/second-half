@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Second half</title>
+  <meta name="description" content="A quarterly letter for two addresses. Your own news sits on the second half.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&family=Spectral:ital,wght@0,400;0,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./issue.css">
+</head>
+<body>
+  <header class="mast">
+    <a class="wordmark" href="#top">Second half</a>
+    <nav aria-label="Sections">
+      <a href="#issue">The issue</a>
+      <a href="#fold">The fold</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Your own news sits second.</h1>
+          <p class="lead">Their letter leads, and yours closes the issue.</p>
+        </div>
+        <div class="hero-visual">
+          <a class="btn" href="mailto:letters@example.com?subject=This%20quarter">Send this quarter</a>
+          <div class="half">
+            <p class="half-name">First half</p>
+            <p>The other address.</p>
+          </div>
+          <div class="half">
+            <p class="half-name">Second half</p>
+            <p>Your address.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="who" id="pair">
+      <div class="container">
+        <h2>Two addresses, one collector.</h2>
+        <div class="rows">
+          <div class="row">
+            <h3>Arrival</h3>
+            <p>One of the two addresses writes the collector.</p>
+          </div>
+          <div class="row">
+            <h3>The wait</h3>
+            <p>The issue stays shut until the other letter lands.</p>
+          </div>
+          <div class="row">
+            <h3>The seal</h3>
+            <p>Both notes fold, then go back to each reader.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="issue" id="issue">
+      <div class="container">
+        <h2>The other address opens it.</h2>
+        <div class="cols">
+          <p class="opening">The other note runs in these columns. A picture sent with that letter sits in the frame below.</p>
+        </div>
+        <figure class="shot">
+          <div class="frame" data-slot="notebook">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Spiralbinder%C3%BCcken_--_2022_--_9722.jpg/1280px-Spiralbinder%C3%BCcken_--_2022_--_9722.jpg"
+              srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Spiralbinder%C3%BCcken_--_2022_--_9722.jpg/960px-Spiralbinder%C3%BCcken_--_2022_--_9722.jpg 960w, https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Spiralbinder%C3%BCcken_--_2022_--_9722.jpg/1280px-Spiralbinder%C3%BCcken_--_2022_--_9722.jpg 1280w, https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Spiralbinder%C3%BCcken_--_2022_--_9722.jpg/1920px-Spiralbinder%C3%BCcken_--_2022_--_9722.jpg 1920w"
+              sizes="80rem"
+              width="6576"
+              height="4384"
+              alt="The silver wire spiral of an open grid notebook in close up, shallow focus">
+          </div>
+          <figcaption>The wire spiral of an open notebook.</figcaption>
+        </figure>
+        <hr class="rule-double">
+        <h3>Your own quarter.</h3>
+        <p class="own">Your note starts under the double rule. Each reader receives the halves swapped.</p>
+      </div>
+    </section>
+
+    <section class="fold" id="fold">
+      <div class="container fold-grid">
+        <h2>Nothing leaves until both write.</h2>
+        <div class="rows">
+          <div class="row">
+            <h3>Kept</h3>
+            <p>The collector stores the note and the pictures.</p>
+          </div>
+          <div class="row">
+            <h3>Matched</h3>
+            <p>The second letter completes the handshake.</p>
+          </div>
+          <div class="row">
+            <h3>Returned</h3>
+            <p>Each copy opens on the other person.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="colophon">
+    <div class="container">
+      <p>Second half is one issue for two addresses. The notebook photograph holds the picture slot until a letter brings its own. Photographs: <a href="https://commons.wikimedia.org/wiki/File:Spiralbinder%C3%BCcken_--_2022_--_9722.jpg">Dietmar Rabich</a>, CC BY-SA 4.0, Wikimedia Commons.</p>
+    </div>
+  </footer>
+  <script>
+    window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+    document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });
+  </script>
+</body>
+</html>

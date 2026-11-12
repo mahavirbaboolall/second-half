@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-09",
+  "project": "second-half",
+  "preserved": "No existing design.md, fonts, or palette. Greenfield.",
+  "introduced": "Newsprint tokens and base from the Hallmark scaffold. The letter and the mail handshake are new.",
+  "inferences": {
+    "material": "Words of the two letters, plus pictures attached to those emails. The specimen uses one library photograph in the picture slot.",
+    "audience": "The two people named in the pair file.",
+    "use": "Read the quarter. Send the next one to the collector.",
+    "tone": "Editorial, restrained, a broadsheet letter. Vibe: a folded quarterly between two people."
+  }
+}
